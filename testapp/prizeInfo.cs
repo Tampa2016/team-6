@@ -8,27 +8,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace testapp
 {
-    public partial class Form3 : Form
+    public partial class prizeInfo : Form
     {
-        public Form3()
+        public prizeInfo()
         {
             InitializeComponent();
-            //label1.Text = list.listAccounts[accountIndex].getPoints() + " points";
+            label1.Text = list.listAccounts[list.accountIndex].getPoints() + " points";
 
         }
-
+        //show profile page
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            profileForm f = new profileForm();
             this.Hide();
             f.Show();           
         }
-
+        //show featured page
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 f = new Form4();
+            /*Form4 f = new Form4();
+            this.Hide();
+            f.Show();*/
+        }
+        //display home page
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMainMenu f = new frmMainMenu();
             this.Hide();
             f.Show();
         }

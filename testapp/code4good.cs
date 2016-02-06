@@ -75,16 +75,22 @@ namespace testapp {
 
     //////////////////////////////////////////////////////////////////
     public class Locations {
+        private int type;
         private string locName;
         private double rating;
         private string address;
         private string image;
+        private List<Reviews> rev = new List<Reviews>();
 
-        public Locations(string lName, string addr, double rate) {
+        public Locations(int t, string lName, string addr) {
+            this.type = t;
             this.locName = lName;
             this.address = addr;
-            this.rating = rate;
         }
+        public void addReview(Reviews r)
+        { rev.Add(r); }
+        public List<Reviews> getReviews()
+        { return rev; }
 
         public string getLocName() {
             return locName;
@@ -97,43 +103,64 @@ namespace testapp {
         public double getRating() {
             return rating;
         }
+        public int getType() { return type; }
     }
 
     //////////////////////////////////////////////////////////////////
-    public class Reviews {
-        private string review;
-        private string author;
+    public class Reviews
+    {
         private int likes;
+        private bool wheel;
+        private bool bath;
+        private bool fauc;
+        private bool elav;
+        //table height
+        private int height;
+        //door width
+        private int width;
+        private double rate;
+        private string review;
 
-        public void addReview(string r, string username) {
-            this.review = r;
-            this.author = username;
-            this.likes = 0;
+       
+        public Reviews(bool w, bool b, bool f, bool e, 
+            int hei, int wid ,double r, string message)
+        {
+            wheel = w;
+            bath = b;
+            fauc = f;
+            elav = e;
+            height = hei;
+            width = wid;
+            rate = r;
+            review =     message;
+            likes = 0;
         }
+        public bool getWheel() { return wheel; }
+        public bool getBath() { return bath; }
+        public bool getFaucet() { return fauc; }
+        public bool getElev() { return elav; }
+        public int getHeight() { return height; }
+        public int getWidth() { return width; }
+        public double getRating() { return rate; }
+        public string displayReview() { return review; }
 
-        public string displayReview() {
-            return review;
-        }
-
-        public void incrementLikes() {
+        public void incrementLikes()
+        {
             this.likes++;
         }
-
-        public string displayAuthor() {
-            return author;
-        }
     }
-
+    //container to hold global vars
     public static class list
     {
         public static List<Accounts> listAccounts=new List<Accounts>();
+        public static List<Locations> listLocations = new List<Locations>();
         public static int accountIndex;
+        public static int currentLocationIndex;
+        public static int typeSearch;
+        public static string searchString;
+
     }
     
     
-}/*
-    //dataset for Accounts 		public Accounts(string u, string pw, int p, int l, int ty, string pn){
-    List<Accounts> listAccounts = new List<Accounts>();
-    Accounts listAccounts = new Accounts()*/
-
+}
 

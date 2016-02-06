@@ -19,7 +19,10 @@ namespace testapp
 
         private void btnFB_Click(object sender, EventArgs e)
         {
-            btnFB.Text = "FB test";
+            btnFB.Text = "FB BROKE";
+            /*this.Hide();
+            Review f = new Review();
+            f.Show();*/
         }
 
         private void btnCreate_Click(object sender, EventArgs e)

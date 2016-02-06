@@ -26,3 +26,9 @@ C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\
 C:\Users\Lily H\Documents\GitHub\team-6\testapp\bin\Debug\testapp.exe.config
 C:\Users\Lily H\Documents\GitHub\team-6\testapp\obj\Debug\testapp.exe
 C:\Users\Lily H\Documents\GitHub\team-6\testapp\obj\Debug\testapp.pdb
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.prizeInfo.resources
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.profileForm.resources
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.Review.resources
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.Search.resources
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.Form4.resources
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.Form5.resources
