@@ -30,9 +30,19 @@ namespace testapp
             {
                 Accounts a = new Accounts(txtUser.Text, txtPass.Text, Int32.Parse(txtPhone.Text));
                 list.listAccounts.Add(a);
+                //traverse list to get index of new account
+                for (int i =0;i<list.listAccounts.Count;i++)
+                {
+                    if (list.listAccounts[i].getUser() == a.getUser())
+                    {
+                        list.accountIndex = i;
+                    }
+                }
+
                 this.Hide();
                 frmMainMenu f2 = new frmMainMenu();
                 f2.Show();
+
             }
 
         }

@@ -62,7 +62,9 @@ namespace testapp {
             this.setThankyous(this.getThankyous() + value);
             return;
         }
-
+        public string getUser() {
+            return user;
+        }
         public bool checkPassword(string tmp) {
             if (tmp != this.password)
                 return false;
@@ -125,7 +127,9 @@ namespace testapp {
     public static class list
     {
         public static List<Accounts> listAccounts=new List<Accounts>();
+        public static int accountIndex;
     }
+    
     
 }/*
     //dataset for Accounts 		public Accounts(string u, string pw, int p, int l, int ty, string pn){

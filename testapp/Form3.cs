@@ -19,7 +19,8 @@ namespace testapp
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            label1.Text = "synced properly";
+            list.listAccounts[list.accountIndex].setPoints(50);
+            lblPoints.Text = "Points: " + list.listAccounts[list.accountIndex].getPoints();
         }
     }
 }
