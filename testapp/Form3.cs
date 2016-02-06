@@ -19,7 +19,7 @@ namespace testapp
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+            label1.Text = "synced properly";
         }
     }
 }
