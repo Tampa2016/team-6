@@ -8,3 +8,4 @@ C:\Users\caitb\Documents\Visual Studio 2015\Projects\testapp\team-6\testapp\obj\
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\testapp\team-6\testapp\obj\Debug\testapp.csproj.GenerateResource.Cache
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\testapp\team-6\testapp\obj\Debug\testapp.exe
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\testapp\team-6\testapp\obj\Debug\testapp.pdb
+C:\Users\caitb\Documents\Visual Studio 2015\Projects\testapp\team-6\testapp\obj\Debug\testapp.Form2.resources
