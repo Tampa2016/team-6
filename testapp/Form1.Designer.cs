@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 31);
+            this.label1.Location = new System.Drawing.Point(83, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 2;
@@ -56,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 72);
+            this.label2.Location = new System.Drawing.Point(83, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 13);
             this.label2.TabIndex = 3;
@@ -64,9 +64,9 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(75, 127);
+            this.btnCreate.Location = new System.Drawing.Point(86, 136);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(129, 23);
+            this.btnCreate.Size = new System.Drawing.Size(113, 23);
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "create account";
             this.btnCreate.UseVisualStyleBackColor = true;

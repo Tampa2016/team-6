@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace testapp
 {
+   
+
     public partial class frmLogOnUser : Form
     {
-        
+       
         public frmLogOnUser()
         {
             InitializeComponent();
@@ -20,14 +22,17 @@ namespace testapp
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
         
         private void btnMake_Click(object sender, EventArgs e)
         {
             if(txtPass.Text==txtPassConf.Text)
             {
-                txtPhone.Text = "WORKED";
+                Accounts a = new Accounts(txtUser.Text, txtPass.Text, Int32.Parse(txtPhone.Text));
+                list.listAccounts.Add(a);
+                this.Hide();
+                frmMainMenu f2 = new frmMainMenu();
+                f2.Show();
             }
 
         }
