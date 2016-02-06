@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace testapp
 {
-    public partial class Form2 : Form
+   
+
+    public partial class frmLogOnUser : Form
     {
-        public Form2()
+       
+        public frmLogOnUser()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+        
+        private void btnMake_Click(object sender, EventArgs e)
+        {
+            if(txtPass.Text==txtPassConf.Text)
+            {
+                Accounts a = new Accounts(txtUser.Text, txtPass.Text, Int32.Parse(txtPhone.Text));
+                list.listAccounts.Add(a);
+                //traverse list to get index of new account
+                for (int i =0;i<list.listAccounts.Count;i++)
+                {
+                    if (list.listAccounts[i].getUser() == a.getUser())
+                    {
+                        list.accountIndex = i;
+                    }
+                }
+
+                this.Hide();
+                frmMainMenu f2 = new frmMainMenu();
+                f2.Show();
+
+            }
+
         }
     }
 }

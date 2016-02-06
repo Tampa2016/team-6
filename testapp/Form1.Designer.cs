@@ -1,6 +1,6 @@
 ﻿namespace testapp
 {
-    partial class Form1
+    partial class frmLogOnChoice
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnFB = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnFB
             // 
-            this.button1.Location = new System.Drawing.Point(86, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Log On";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(75, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.btnFB.Location = new System.Drawing.Point(86, 165);
+            this.btnFB.Name = "btnFB";
+            this.btnFB.Size = new System.Drawing.Size(113, 23);
+            this.btnFB.TabIndex = 0;
+            this.btnFB.Text = "facebook logon";
+            this.btnFB.UseVisualStyleBackColor = true;
+            this.btnFB.Click += new System.EventHandler(this.btnFB_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 64);
+            this.label1.Location = new System.Drawing.Point(83, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "User Log On Page";
+            this.label1.Text = "place holder for logo";
             // 
-            // Form1
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(83, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "placeholder for title image";
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(86, 136);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(113, 23);
+            this.btnCreate.TabIndex = 4;
+            this.btnCreate.Text = "create account";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // frmLogOnChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnCreate);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.btnFB);
+            this.Name = "frmLogOnChoice";
+            this.Text = "Log On Page";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,9 +90,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnFB;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
 

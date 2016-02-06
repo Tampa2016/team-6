@@ -10,16 +10,24 @@ using System.Windows.Forms;
 
 namespace testapp
 {
-    public partial class Form1 : Form
+    public partial class frmLogOnChoice : Form
     {
-        public Form1()
+        public frmLogOnChoice()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnFB_Click(object sender, EventArgs e)
         {
-            button1.Text = "1";
+            btnFB.Text = "FB test";
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            btnCreate.Text = "create test";
+            this.Hide();
+            frmLogOnUser f2 = new frmLogOnUser();
+            f2.Show();
         }
     }
 }
