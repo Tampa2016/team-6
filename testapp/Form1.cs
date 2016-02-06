@@ -17,11 +17,14 @@ namespace testapp
             InitializeComponent();
         }
 
+        //Facebook button
         private void btnFB_Click(object sender, EventArgs e)
         {
             btnFB.Text = "FB test";
         }
 
+        //Create an account button 
+        //When clicked the frmLogOnUser opens
         private void btnCreate_Click(object sender, EventArgs e)
         {
             btnCreate.Text = "create test";

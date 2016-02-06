@@ -39,6 +39,7 @@ namespace testapp
                     }
                 }
 
+                //After account is created the main menu appears
                 this.Hide();
                 frmMainMenu f2 = new frmMainMenu();
                 f2.Show();

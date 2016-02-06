@@ -21,7 +21,7 @@ namespace testapp
         {
             list.listAccounts[list.accountIndex].setPoints(50);
             lblPoints.Text = "Points: " + list.listAccounts[list.accountIndex].getPoints();
-            //coment test
+            
         }
     }
 }
