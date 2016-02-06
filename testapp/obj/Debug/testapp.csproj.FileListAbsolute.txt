@@ -23,3 +23,6 @@ C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\bin\Debug\testapp.exe
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\bin\Debug\testapp.pdb
 C:\Users\caitb\Documents\Visual Studio 2015\Projects\apprepo\team-6\testapp\obj\Debug\testapp.frmMainMenu.resources
+C:\Users\Lily H\Documents\GitHub\team-6\testapp\bin\Debug\testapp.exe.config
+C:\Users\Lily H\Documents\GitHub\team-6\testapp\obj\Debug\testapp.exe
+C:\Users\Lily H\Documents\GitHub\team-6\testapp\obj\Debug\testapp.pdb

@@ -64,12 +64,13 @@
             // 
             // btnCreate
             // 
+            this.btnCreate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCreate.Location = new System.Drawing.Point(86, 136);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(113, 23);
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "create account";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // frmLogOnChoice
